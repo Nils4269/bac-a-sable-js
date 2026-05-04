@@ -38,3 +38,42 @@ function derniereLettre(mot) {
 }
 
 derniereLettre(mot)
+
+
+/*EXO 4 */
+
+function nouvelleOffre(nouveauProduit, listeInitial){
+    console.log(listeInitial.replace("bubble tea",nouveauProduit))
+}
+
+nouvelleOffre("matcha","café,bubble tea, tisane")
+
+//role : Afficher des balises a ma page html
+// parametre : la balise a ajouter
+// return : rien
+
+function ajouterBalise(balise){
+    document.querySelector("body").innerHTML+= balise
+}
+
+ajouterBalise("<h1>Coucou</h1>")
+
+//role : afficher l'addition de deux chiffres
+//parametre : les chiffres a additionner
+//return : rien
+
+function afficherAddition(a, b){
+    ajouterBalise(`<p> ${a+b} </p>`)
+}
+
+afficherAddition(7,5)
+
+//role :afficher le prénom dans le body 
+//parametre : prenom
+//return : rien 
+let David = "David"
+function affichePrenom(prenom){
+    ajouterBalise (`<p> Salut ${prenom}, comment ça va ? </p>`)
+}
+
+affichePrenom("David")
