@@ -77,3 +77,12 @@ function affichePrenom(prenom){
 }
 
 affichePrenom("David")
+
+//role: afficher si l'adresse mail contient ou non un @
+//parametre : l'adresse mail a verifier
+//return : rien car elle affiche 
+
+function verifMail(mailAverif){
+    console.log(mailAverif.includes("@"))
+}
+verifMail("contact@gmail.com")
