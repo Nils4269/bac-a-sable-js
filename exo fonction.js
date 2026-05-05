@@ -3,6 +3,8 @@
 //parametre : 4 notes
 //return : la moyenne 
 
+const { useInsertionEffect } = require("react");
+
 /*EXO 1 */
 
 let notes = moyenne(13, 15, 18, 20);
@@ -86,3 +88,41 @@ function verifMail(mailAverif){
     console.log(mailAverif.includes("@"))
 }
 verifMail("contact@gmail.com")
+
+
+
+
+
+
+
+// EXO 7 
+
+
+// role : poser une question 
+//parametre : la question
+//return: la reponse de l'utilisateur
+
+function poserQuestion(question){
+   let rep = prompt(question)
+   return rep 
+}
+
+poserQuestion("LE CIEL EST T'IL BLEU")
+
+console.log(reponse)
+console.log(question)
+
+
+//EXO 8 : 
+
+//role : convertir un prix en dollar 
+//parametre : le prix a convertir et le taux de change 
+//return : le prix convertit
+
+function convertion(prix, taux){
+    return prix * taux;
+}
+
+let resultat = conversion(3, 1.17)
+
+console.log(`le prix convertit est de ${resultat} dollars`)
