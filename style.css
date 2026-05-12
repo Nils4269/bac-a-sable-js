@@ -1,0 +1,19 @@
+.bg-blue{
+    background-color:blue
+}
+
+.text-white{
+    color: white;
+}
+
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+.align-item{
+    
+}
